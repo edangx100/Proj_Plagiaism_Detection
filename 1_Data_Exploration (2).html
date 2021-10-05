@@ -12947,8 +12947,13 @@ ul.typeahead-list  > li > a.pull-right {
 /*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
-    .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #f8f8f8; }
+    pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
@@ -13017,64 +13022,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
-<style type="text/css">
-    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when 
-a notebook is open. this rule won't be applied when the notebook is not open (in 404 view for example) */
-body[data-notebook-name] #menubar-container #maintoolbar:not(.show-panel),
-body[data-notebook-name] #menubar-container ul.navbar-nav:not(.show-panel) {
-  display: none;
-}
-
-#menubar.only-panel #menus.navbar-default {
-    background: #fff;
-    border-color: #fff;
-}
-
-.toolbar.with-statusbar{
-    margin-top: 3px;
-    margin-bottom: 0;
-}
-
-    </style>
 
 
 <style type="text/css">
@@ -13108,7 +13055,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13158,7 +13105,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>wget https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c4147f9_data/data.zip
@@ -13169,248 +13116,10 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>--2021-09-26 04:55:52--  https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c4147f9_data/data.zip
-Resolving s3.amazonaws.com (s3.amazonaws.com)... 52.216.76.14
-Connecting to s3.amazonaws.com (s3.amazonaws.com)|52.216.76.14|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 113826 (111K) [application/zip]
-Saving to: ‘data.zip’
-
-data.zip            100%[===================&gt;] 111.16K  --.-KB/s    in 0.1s    
-
-2021-09-26 04:55:53 (1.02 MB/s) - ‘data.zip’ saved [113826/113826]
-
-Archive:  data.zip
-   creating: data/
-  inflating: data/.DS_Store          
-   creating: __MACOSX/
-   creating: __MACOSX/data/
-  inflating: __MACOSX/data/._.DS_Store  
-  inflating: data/file_information.csv  
-  inflating: __MACOSX/data/._file_information.csv  
-  inflating: data/g0pA_taska.txt     
-  inflating: __MACOSX/data/._g0pA_taska.txt  
-  inflating: data/g0pA_taskb.txt     
-  inflating: __MACOSX/data/._g0pA_taskb.txt  
-  inflating: data/g0pA_taskc.txt     
-  inflating: __MACOSX/data/._g0pA_taskc.txt  
-  inflating: data/g0pA_taskd.txt     
-  inflating: __MACOSX/data/._g0pA_taskd.txt  
-  inflating: data/g0pA_taske.txt     
-  inflating: __MACOSX/data/._g0pA_taske.txt  
-  inflating: data/g0pB_taska.txt     
-  inflating: __MACOSX/data/._g0pB_taska.txt  
-  inflating: data/g0pB_taskb.txt     
-  inflating: __MACOSX/data/._g0pB_taskb.txt  
-  inflating: data/g0pB_taskc.txt     
-  inflating: __MACOSX/data/._g0pB_taskc.txt  
-  inflating: data/g0pB_taskd.txt     
-  inflating: __MACOSX/data/._g0pB_taskd.txt  
-  inflating: data/g0pB_taske.txt     
-  inflating: __MACOSX/data/._g0pB_taske.txt  
-  inflating: data/g0pC_taska.txt     
-  inflating: __MACOSX/data/._g0pC_taska.txt  
-  inflating: data/g0pC_taskb.txt     
-  inflating: __MACOSX/data/._g0pC_taskb.txt  
-  inflating: data/g0pC_taskc.txt     
-  inflating: __MACOSX/data/._g0pC_taskc.txt  
-  inflating: data/g0pC_taskd.txt     
-  inflating: __MACOSX/data/._g0pC_taskd.txt  
-  inflating: data/g0pC_taske.txt     
-  inflating: __MACOSX/data/._g0pC_taske.txt  
-  inflating: data/g0pD_taska.txt     
-  inflating: __MACOSX/data/._g0pD_taska.txt  
-  inflating: data/g0pD_taskb.txt     
-  inflating: __MACOSX/data/._g0pD_taskb.txt  
-  inflating: data/g0pD_taskc.txt     
-  inflating: __MACOSX/data/._g0pD_taskc.txt  
-  inflating: data/g0pD_taskd.txt     
-  inflating: __MACOSX/data/._g0pD_taskd.txt  
-  inflating: data/g0pD_taske.txt     
-  inflating: __MACOSX/data/._g0pD_taske.txt  
-  inflating: data/g0pE_taska.txt     
-  inflating: __MACOSX/data/._g0pE_taska.txt  
-  inflating: data/g0pE_taskb.txt     
-  inflating: __MACOSX/data/._g0pE_taskb.txt  
-  inflating: data/g0pE_taskc.txt     
-  inflating: __MACOSX/data/._g0pE_taskc.txt  
-  inflating: data/g0pE_taskd.txt     
-  inflating: __MACOSX/data/._g0pE_taskd.txt  
-  inflating: data/g0pE_taske.txt     
-  inflating: __MACOSX/data/._g0pE_taske.txt  
-  inflating: data/g1pA_taska.txt     
-  inflating: __MACOSX/data/._g1pA_taska.txt  
-  inflating: data/g1pA_taskb.txt     
-  inflating: __MACOSX/data/._g1pA_taskb.txt  
-  inflating: data/g1pA_taskc.txt     
-  inflating: __MACOSX/data/._g1pA_taskc.txt  
-  inflating: data/g1pA_taskd.txt     
-  inflating: __MACOSX/data/._g1pA_taskd.txt  
-  inflating: data/g1pA_taske.txt     
-  inflating: __MACOSX/data/._g1pA_taske.txt  
-  inflating: data/g1pB_taska.txt     
-  inflating: __MACOSX/data/._g1pB_taska.txt  
-  inflating: data/g1pB_taskb.txt     
-  inflating: __MACOSX/data/._g1pB_taskb.txt  
-  inflating: data/g1pB_taskc.txt     
-  inflating: __MACOSX/data/._g1pB_taskc.txt  
-  inflating: data/g1pB_taskd.txt     
-  inflating: __MACOSX/data/._g1pB_taskd.txt  
-  inflating: data/g1pB_taske.txt     
-  inflating: __MACOSX/data/._g1pB_taske.txt  
-  inflating: data/g1pD_taska.txt     
-  inflating: __MACOSX/data/._g1pD_taska.txt  
-  inflating: data/g1pD_taskb.txt     
-  inflating: __MACOSX/data/._g1pD_taskb.txt  
-  inflating: data/g1pD_taskc.txt     
-  inflating: __MACOSX/data/._g1pD_taskc.txt  
-  inflating: data/g1pD_taskd.txt     
-  inflating: __MACOSX/data/._g1pD_taskd.txt  
-  inflating: data/g1pD_taske.txt     
-  inflating: __MACOSX/data/._g1pD_taske.txt  
-  inflating: data/g2pA_taska.txt     
-  inflating: __MACOSX/data/._g2pA_taska.txt  
-  inflating: data/g2pA_taskb.txt     
-  inflating: __MACOSX/data/._g2pA_taskb.txt  
-  inflating: data/g2pA_taskc.txt     
-  inflating: __MACOSX/data/._g2pA_taskc.txt  
-  inflating: data/g2pA_taskd.txt     
-  inflating: __MACOSX/data/._g2pA_taskd.txt  
-  inflating: data/g2pA_taske.txt     
-  inflating: __MACOSX/data/._g2pA_taske.txt  
-  inflating: data/g2pB_taska.txt     
-  inflating: __MACOSX/data/._g2pB_taska.txt  
-  inflating: data/g2pB_taskb.txt     
-  inflating: __MACOSX/data/._g2pB_taskb.txt  
-  inflating: data/g2pB_taskc.txt     
-  inflating: __MACOSX/data/._g2pB_taskc.txt  
-  inflating: data/g2pB_taskd.txt     
-  inflating: __MACOSX/data/._g2pB_taskd.txt  
-  inflating: data/g2pB_taske.txt     
-  inflating: __MACOSX/data/._g2pB_taske.txt  
-  inflating: data/g2pC_taska.txt     
-  inflating: __MACOSX/data/._g2pC_taska.txt  
-  inflating: data/g2pC_taskb.txt     
-  inflating: __MACOSX/data/._g2pC_taskb.txt  
-  inflating: data/g2pC_taskc.txt     
-  inflating: __MACOSX/data/._g2pC_taskc.txt  
-  inflating: data/g2pC_taskd.txt     
-  inflating: __MACOSX/data/._g2pC_taskd.txt  
-  inflating: data/g2pC_taske.txt     
-  inflating: __MACOSX/data/._g2pC_taske.txt  
-  inflating: data/g2pE_taska.txt     
-  inflating: __MACOSX/data/._g2pE_taska.txt  
-  inflating: data/g2pE_taskb.txt     
-  inflating: __MACOSX/data/._g2pE_taskb.txt  
-  inflating: data/g2pE_taskc.txt     
-  inflating: __MACOSX/data/._g2pE_taskc.txt  
-  inflating: data/g2pE_taskd.txt     
-  inflating: __MACOSX/data/._g2pE_taskd.txt  
-  inflating: data/g2pE_taske.txt     
-  inflating: __MACOSX/data/._g2pE_taske.txt  
-  inflating: data/g3pA_taska.txt     
-  inflating: __MACOSX/data/._g3pA_taska.txt  
-  inflating: data/g3pA_taskb.txt     
-  inflating: __MACOSX/data/._g3pA_taskb.txt  
-  inflating: data/g3pA_taskc.txt     
-  inflating: __MACOSX/data/._g3pA_taskc.txt  
-  inflating: data/g3pA_taskd.txt     
-  inflating: __MACOSX/data/._g3pA_taskd.txt  
-  inflating: data/g3pA_taske.txt     
-  inflating: __MACOSX/data/._g3pA_taske.txt  
-  inflating: data/g3pB_taska.txt     
-  inflating: __MACOSX/data/._g3pB_taska.txt  
-  inflating: data/g3pB_taskb.txt     
-  inflating: __MACOSX/data/._g3pB_taskb.txt  
-  inflating: data/g3pB_taskc.txt     
-  inflating: __MACOSX/data/._g3pB_taskc.txt  
-  inflating: data/g3pB_taskd.txt     
-  inflating: __MACOSX/data/._g3pB_taskd.txt  
-  inflating: data/g3pB_taske.txt     
-  inflating: __MACOSX/data/._g3pB_taske.txt  
-  inflating: data/g3pC_taska.txt     
-  inflating: __MACOSX/data/._g3pC_taska.txt  
-  inflating: data/g3pC_taskb.txt     
-  inflating: __MACOSX/data/._g3pC_taskb.txt  
-  inflating: data/g3pC_taskc.txt     
-  inflating: __MACOSX/data/._g3pC_taskc.txt  
-  inflating: data/g3pC_taskd.txt     
-  inflating: __MACOSX/data/._g3pC_taskd.txt  
-  inflating: data/g3pC_taske.txt     
-  inflating: __MACOSX/data/._g3pC_taske.txt  
-  inflating: data/g4pB_taska.txt     
-  inflating: __MACOSX/data/._g4pB_taska.txt  
-  inflating: data/g4pB_taskb.txt     
-  inflating: __MACOSX/data/._g4pB_taskb.txt  
-  inflating: data/g4pB_taskc.txt     
-  inflating: __MACOSX/data/._g4pB_taskc.txt  
-  inflating: data/g4pB_taskd.txt     
-  inflating: __MACOSX/data/._g4pB_taskd.txt  
-  inflating: data/g4pB_taske.txt     
-  inflating: __MACOSX/data/._g4pB_taske.txt  
-  inflating: data/g4pC_taska.txt     
-  inflating: __MACOSX/data/._g4pC_taska.txt  
-  inflating: data/g4pC_taskb.txt     
-  inflating: __MACOSX/data/._g4pC_taskb.txt  
-  inflating: data/g4pC_taskc.txt     
-  inflating: __MACOSX/data/._g4pC_taskc.txt  
-  inflating: data/g4pC_taskd.txt     
-  inflating: __MACOSX/data/._g4pC_taskd.txt  
-  inflating: data/g4pC_taske.txt     
-  inflating: __MACOSX/data/._g4pC_taske.txt  
-  inflating: data/g4pD_taska.txt     
-  inflating: __MACOSX/data/._g4pD_taska.txt  
-  inflating: data/g4pD_taskb.txt     
-  inflating: __MACOSX/data/._g4pD_taskb.txt  
-  inflating: data/g4pD_taskc.txt     
-  inflating: __MACOSX/data/._g4pD_taskc.txt  
-  inflating: data/g4pD_taskd.txt     
-  inflating: __MACOSX/data/._g4pD_taskd.txt  
-  inflating: data/g4pD_taske.txt     
-  inflating: __MACOSX/data/._g4pD_taske.txt  
-  inflating: data/g4pE_taska.txt     
-  inflating: __MACOSX/data/._g4pE_taska.txt  
-  inflating: data/g4pE_taskb.txt     
-  inflating: __MACOSX/data/._g4pE_taskb.txt  
-  inflating: data/g4pE_taskc.txt     
-  inflating: __MACOSX/data/._g4pE_taskc.txt  
-  inflating: data/g4pE_taskd.txt     
-  inflating: __MACOSX/data/._g4pE_taskd.txt  
-  inflating: data/g4pE_taske.txt     
-  inflating: __MACOSX/data/._g4pE_taske.txt  
-  inflating: data/orig_taska.txt     
-  inflating: __MACOSX/data/._orig_taska.txt  
-  inflating: data/orig_taskb.txt     
-  inflating: data/orig_taskc.txt     
-  inflating: __MACOSX/data/._orig_taskc.txt  
-  inflating: data/orig_taskd.txt     
-  inflating: __MACOSX/data/._orig_taskd.txt  
-  inflating: data/orig_taske.txt     
-  inflating: __MACOSX/data/._orig_taske.txt  
-  inflating: data/test_info.csv      
-  inflating: __MACOSX/data/._test_info.csv  
-  inflating: __MACOSX/._data         
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import libraries</span>
@@ -13434,7 +13143,7 @@ Archive:  data.zip
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">csv_file</span> <span class="o">=</span> <span class="s1">&#39;data/file_information.csv&#39;</span>
@@ -13454,7 +13163,7 @@ Archive:  data.zip
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13582,7 +13291,7 @@ Archive:  data.zip
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print out some stats about the data</span>
@@ -13643,7 +13352,7 @@ Unique plagiarism categories:  [&#39;non&#39; &#39;cut&#39; &#39;light&#39; &#39
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show counts by different tasks and amounts of plagiarism</span>
@@ -14035,11 +13744,11 @@ Task &amp; Plagiarism Level Combos :
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="o">%</span> <span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="c1"># counts</span>
 <span class="n">group</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Task&#39;</span><span class="p">,</span> <span class="s1">&#39;Category&#39;</span><span class="p">]</span>
@@ -14059,13 +13768,13 @@ Task &amp; Plagiarism Level Combos :
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;Container object of 25 artists&gt;</pre>
+<pre>&lt;BarContainer object of 25 artists&gt;</pre>
 </div>
 
 </div>
@@ -14078,7 +13787,7 @@ Task &amp; Plagiarism Level Combos :
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -14093,23 +13802,10 @@ Task &amp; Plagiarism Level Combos :
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Up-Next">Up Next<a class="anchor-link" href="#Up-Next">&#182;</a></h2><p>This notebook is just about data loading and exploration, and you do not need to include it in your final project submission.</p>
-<p>In the notebooks in the final project, you'll use this data to train a complete plagiarism classifier. You'll be tasked with extracting meaningful features from the text data, reading in answers to different tasks and comparing them to the original Wikipedia source text. You'll engineer similarity features that will help identify cases of plagiarism. Then, you'll use these features to train and deploy a classification model in a SageMaker notebook instance.</p>
+<p>In the next few notebooks, you'll use this data to train a complete plagiarism classifier. You'll be tasked with extracting meaningful features from the text data, reading in answers to different tasks and comparing them to the original Wikipedia source text. You'll engineer similarity features that will help identify cases of plagiarism. Then, you'll use these features to train and deploy a classification model in a SageMaker notebook instance.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
